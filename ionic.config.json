@@ -1,0 +1,7 @@
+{
+  "name": "kurs-ionic-od-podstaw",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
