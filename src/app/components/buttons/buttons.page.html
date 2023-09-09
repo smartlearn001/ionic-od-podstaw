@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Przyciski</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <h1>Podstawowe ustawienia</h1>
+  <ion-button>Domyślny</ion-button>
+  <ion-button [disabled]="true">Disabled</ion-button>
+  <h1>Expand</h1>
+  <ion-button expand="block">Block</ion-button>
+  <ion-button expand="full">Full</ion-button>
+  <h1>Zaokrąglenia</h1>
+  <ion-button>Domyślny</ion-button>
+  <ion-button shape="round">Round</ion-button>
+  <h1>Fill</h1>
+  <ion-button fill="solid">Solid</ion-button>
+  <ion-button fill="clear">Clear</ion-button>
+  <ion-button fill="outline">Outline</ion-button>
+  <h1>Wielkość</h1>
+  <ion-button size="small">Mały</ion-button>
+  <ion-button size="default">Domyślna</ion-button>
+  <ion-button size="large">Duzy</ion-button>
+  <h1>Ikony</h1>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon>
+    Lewa ikona
+  </ion-button>
+  <ion-button>
+    <ion-icon slot="end" name="star"></ion-icon>
+    Prawa ikona
+  </ion-button>
+  <ion-button>
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+  <h1>Kolor</h1>
+  <ion-button color="primary">Pierwszy</ion-button>
+  <ion-button color="secondary">Drugi</ion-button>
+  <ion-button color="danger">Error</ion-button>
+</ion-content>
