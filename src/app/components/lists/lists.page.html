@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Listy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header color="primary">
+      Linie
+    </ion-list-header>
+    <ion-item lines="none">
+      <ion-label>
+        Treść bez lini
+      </ion-label>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>
+        Treść bez lini
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header color="primary">
+      Avatar
+    </ion-list-header>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-label>
+        Treść bez lini
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header color="primary">
+      Przyciski
+    </ion-list-header>
+    <ion-item>
+      <ion-button slot="start">
+        Lewy
+      </ion-button>
+      <ion-label>Z przyciskiem</ion-label>
+      <ion-button slot="end">
+        Prawy 1
+      </ion-button>
+      <ion-button slot="end">
+        Prawy 2
+      </ion-button>
+    </ion-item>
+
+    <ion-list-header color="primary">
+      Klikalny element
+    </ion-list-header>
+    <ion-item detail="true">
+      <ion-label>
+        Klikalny 1
+      </ion-label>
+    </ion-item>
+    <ion-item button>
+      <ion-label>
+        Klikalny 2
+      </ion-label>
+    </ion-item>
+    <ion-item button detail="true">
+      <ion-label>
+        Klikalny 3
+      </ion-label>
+    </ion-item>
+    <ion-item href="/">
+      <ion-label>
+        Klikalny 4
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header color="primary">
+      Lista testowa
+    </ion-list-header>
+    <ng-container *ngFor="let item of list; let index = index">
+      <ion-item-divider *ngIf="!(index%10)" color="primary" sticky="true">
+        {{ index + 1 }}
+      </ion-item-divider>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-label>
+            {{ item.name }}
+            <p>{{ item.desc }}</p>
+          </ion-label>
+        </ion-item>
+
+        <ion-item-options side="start">
+          <ion-item-option color="secondary">Edytuj</ion-item-option>
+        </ion-item-options>
+
+        <ion-item-options>
+          <ion-item-option color="danger">Usuń</ion-item-option>
+          <ion-item-option color="success">Archiwizuj</ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ng-container>
+  </ion-list>
+</ion-content>

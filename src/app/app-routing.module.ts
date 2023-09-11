@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'components/toolbars',
     loadChildren: () => import('./components/toolbars/toolbars.module').then( m => m.ToolbarsPageModule)
   },
+  {
+    path: 'components/lists',
+    loadChildren: () => import('./components/lists/lists.module').then( m => m.ListsPageModule)
+  },
 ];
 
 @NgModule({
