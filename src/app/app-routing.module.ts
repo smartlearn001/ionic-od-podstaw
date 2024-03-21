@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'components/cards',
     loadChildren: () => import('./components/cards/cards.module').then( m => m.CardsPageModule)
   },
+  {
+    path: 'components/forms',
+    loadChildren: () => import('./components/forms/forms.module').then( m => m.FormsPageModule)
+  },
 ];
 
 @NgModule({

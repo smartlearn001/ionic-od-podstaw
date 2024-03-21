@@ -1,0 +1,115 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Formularz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form (ngSubmit)="submit()">
+    <ion-list *ngIf="form" [formGroup]="form">
+
+      <ion-item>
+        <ion-input 
+          labelPlacement="floating" 
+          formControlName="text" 
+          label="Text" 
+          placeholder="Wprowadź wartość..."
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea 
+          labelPlacement="floating" 
+          formControlName="textarea" 
+          label="Text" 
+          placeholder="Wprowadź wartość..."
+        ></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-input 
+          labelPlacement="floating" 
+          formControlName="number" 
+          type="number" 
+          label="Number" 
+          placeholder="Wprowadź wartość..."
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input 
+          labelPlacement="floating" 
+          formControlName="disable" 
+          label="Disable"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-checkbox 
+          formControlName="checkbox" 
+          labelPlacement="start"
+        >Checkbox</ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime 
+          formControlName="date" 
+          [firstDayOfWeek]="1" 
+          locale="pl-PL" 
+          presentation="date"
+        ></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Datetime</ion-label>
+        <ion-datetime 
+          formControlName="dateTime" 
+          [firstDayOfWeek]="1" 
+          locale="pl-PL" 
+          presentation="date-time"
+        ></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Time</ion-label>
+        <ion-datetime 
+          formControlName="time" 
+          [firstDayOfWeek]="1" 
+          locale="pl-PL" 
+          presentation="time"
+          ></ion-datetime>
+      </ion-item>
+
+      <ion-radio-group formControlName="radio" [allowEmptySelection]="true">
+        <ion-item>
+          <ion-label>Radio</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="green" labelPlacement="start">Green</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="red" labelPlacement="start">Red</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="blue" labelPlacement="end">Blue</ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-radio value="yellow" labelPlacement="end">Yellow</ion-radio>
+        </ion-item>
+      </ion-radio-group>
+
+      <ion-item>
+        <ion-select label="Select" labelPlacement="floating" [multiple]="false">
+          <ion-select-option value="apple">Apple</ion-select-option>
+          <ion-select-option value="banana">Banana</ion-select-option>
+          <ion-select-option value="orange">Orange</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="full">
+        ZAPISZ
+      </ion-button>
+    </ion-list>
+  </form>
+</ion-content>
