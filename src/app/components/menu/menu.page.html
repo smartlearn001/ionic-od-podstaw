@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-menu-toggle>
+    <ion-button expand="block">Przełącz menu</ion-button>
+  </ion-menu-toggle>
+
+  <ion-button expand="block" (click)="openStartMenu()">Menu początkowe</ion-button>
+  <ion-button expand="block" (click)="openEndMenu()">Menu końcowe</ion-button>
+</ion-content>
