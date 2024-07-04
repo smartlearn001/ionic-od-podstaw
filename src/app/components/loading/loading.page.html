@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Loader</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button id="open-loading">Pokaż loader z html</ion-button>
+  <ion-loading trigger="open-loading" 
+                message="Loading..." 
+                spinner="circles"
+                [duration]="3000"
+  ></ion-loading>
+
+  <ion-button (click)="open()">Pokaż loader z ts</ion-button>
+</ion-content>
