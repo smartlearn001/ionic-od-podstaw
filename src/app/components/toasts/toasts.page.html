@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Toasts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button id="open-toast">Toast z HTML</ion-button>
+  <ion-toast trigger="open-toast" 
+              icon="globe"
+              position="top"
+              message="Dostałeś wiadomość" 
+              [duration]="3000"
+  ></ion-toast><br/>
+  <ion-button (click)="openToastSimple()">Toast z TS</ion-button><br/>
+  <ion-button (click)="openToastButtons()">Toast z TS (PRZYCISKI)</ion-button>
+</ion-content>

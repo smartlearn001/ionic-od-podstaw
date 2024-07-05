@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'components/alerts',
     loadChildren: () => import('./components/alerts/alerts.module').then( m => m.AlertsPageModule)
   },
+  {
+    path: 'components/toasts',
+    loadChildren: () => import('./components/toasts/toasts.module').then( m => m.ToastsPageModule)
+  },
 ];
 
 @NgModule({
