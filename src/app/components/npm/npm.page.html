@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>NPM</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>Slajder</h1>
+  <swiper
+      [slidesPerView]="2"
+      [spaceBetween]="50"
+    >
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/1/200/300"></ion-img>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/2/200/300"></ion-img>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/3/200/300"></ion-img>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/4/200/300"></ion-img>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/5/200/300"></ion-img>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-img src="https://picsum.photos/id/6/200/300"></ion-img>
+    </ng-template>
+  </swiper>
+</ion-content>
