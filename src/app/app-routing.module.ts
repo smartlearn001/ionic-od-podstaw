@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'components/modals',
     loadChildren: () => import('./components/modals/modals.module').then( m => m.ModalsPageModule)
   },
+  {
+    path: 'components/grids',
+    loadChildren: () => import('./components/grids/grids.module').then( m => m.GridsPageModule)
+  },
 ];
 
 @NgModule({

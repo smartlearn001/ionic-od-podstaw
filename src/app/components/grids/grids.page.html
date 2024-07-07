@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Grids</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <h1>Podstawowe</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1>Size</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col size="auto">3</ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>1</ion-col>
+      <ion-col size="8">2</ion-col>
+      <ion-col>3</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1>Responsywność</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm="3">1</ion-col>
+      <ion-col size="12" size-sm="3">2</ion-col>
+      <ion-col size="12" size-sm="3">3</ion-col>
+      <ion-col size="12" size-sm="3">4</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h1>Położenie</h1>
+  <ion-grid>
+    <!-- 
+      ion-align-items-start
+      ion-align-items-center
+      ion-align-items-end 
+      -->
+    <ion-row class="ion-align-items-start">
+      <ion-col> 1 </ion-col>
+      <ion-col> 2 </ion-col>
+      <ion-col> 3 </ion-col>
+      <ion-col>
+        4 <br />
+        # <br />
+        # <br />
+        # <br />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <!-- 
+      ion-justify-content-start
+      ion-justify-content-center
+      ion-justify-content-end 
+    -->
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="3"> 1 </ion-col>
+      <ion-col size="3"> 2 </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
