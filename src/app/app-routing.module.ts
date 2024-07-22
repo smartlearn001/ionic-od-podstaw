@@ -63,6 +63,10 @@ const routes: Routes = [
     path: 'components/npm',
     loadChildren: () => import('./components/npm/npm.module').then( m => m.NpmPageModule)
   },
+  {
+    path: 'styles/colors',
+    loadChildren: () => import('./styles/colors/colors.module').then( m => m.ColorsPageModule)
+  },
 ];
 
 @NgModule({
