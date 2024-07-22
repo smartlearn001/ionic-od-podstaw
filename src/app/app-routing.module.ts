@@ -71,6 +71,10 @@ const routes: Routes = [
     path: 'styles/shadow',
     loadChildren: () => import('./styles/shadow/shadow.module').then( m => m.ShadowPageModule)
   },
+  {
+    path: 'styles/platform',
+    loadChildren: () => import('./styles/platform/platform.module').then( m => m.PlatformPageModule)
+  },
 ];
 
 @NgModule({
