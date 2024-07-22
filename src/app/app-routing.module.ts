@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'styles/platform',
     loadChildren: () => import('./styles/platform/platform.module').then( m => m.PlatformPageModule)
   },
+  {
+    path: 'styles/tailwind',
+    loadChildren: () => import('./styles/tailwind/tailwind.module').then( m => m.TailwindPageModule)
+  },
 ];
 
 @NgModule({

@@ -29,6 +29,10 @@
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .tab-content {
     display: flex;
     align-items: center;
