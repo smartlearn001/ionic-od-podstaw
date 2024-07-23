@@ -79,6 +79,10 @@ const routes: Routes = [
     path: 'styles/tailwind',
     loadChildren: () => import('./styles/tailwind/tailwind.module').then( m => m.TailwindPageModule)
   },
+  {
+    path: 'plugins/camera',
+    loadChildren: () => import('./plugins/camera/camera.module').then( m => m.CameraPageModule)
+  },
 ];
 
 @NgModule({

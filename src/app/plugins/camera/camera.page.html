@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Kamera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button color="primary" (click)="takePicture()" expand="block">Zrób zdjęcie</ion-button>
+
+  <ion-img *ngIf="imageUrl" [src]="imageUrl"></ion-img>
+
+  <ion-item-divider>Url</ion-item-divider>
+  {{ imageUrl }}
+
+  <ion-item-divider>Path</ion-item-divider>
+  {{ path }}
+
+  <ion-item-divider>Metadane</ion-item-divider>
+  {{ exif | json }}
+</ion-content>
