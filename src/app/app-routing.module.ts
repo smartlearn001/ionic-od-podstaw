@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'plugins/gps',
     loadChildren: () => import('./plugins/gps/gps.module').then( m => m.GpsPageModule)
   },
+  {
+    path: 'plugins/call',
+    loadChildren: () => import('./plugins/call/call.module').then( m => m.CallPageModule)
+  }
 ];
 
 @NgModule({
