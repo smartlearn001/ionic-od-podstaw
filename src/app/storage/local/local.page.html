@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>W pamięci przeglądarki</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button (click)="setData()" expand="block">Ustaw dane</ion-button>
+  <ion-button (click)="removeData()" expand="block">Skasuj dane</ion-button>
+  <ion-button (click)="refreshData()" expand="block">Pobierz dane</ion-button>
+  {{ data }}
+</ion-content>
