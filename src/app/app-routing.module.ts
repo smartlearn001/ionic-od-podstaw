@@ -99,6 +99,10 @@ const routes: Routes = [
     path: 'plugins/share',
     loadChildren: () => import('./plugins/share/share.module').then( m => m.SharePageModule)
   },
+  {
+    path: 'store/api',
+    loadChildren: () => import('./store/api/api.module').then( m => m.ApiPageModule)
+  },
 ];
 
 @NgModule({
