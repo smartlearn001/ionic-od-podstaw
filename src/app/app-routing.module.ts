@@ -90,7 +90,11 @@ const routes: Routes = [
   {
     path: 'plugins/call',
     loadChildren: () => import('./plugins/call/call.module').then( m => m.CallPageModule)
-  }
+  },
+  {
+    path: 'plugins/crashlytics',
+    loadChildren: () => import('./plugins/crashlytics/crashlytics.module').then( m => m.CrashlyticsPageModule)
+  },
 ];
 
 @NgModule({

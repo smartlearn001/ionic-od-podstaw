@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638280453351",
+    "project_id": "ionicodpodstaw",
+    "storage_bucket": "ionicodpodstaw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638280453351:android:9ef9db9c79af9eb145a642",
+        "android_client_info": {
+          "package_name": "io.kursionicodpodstaw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8tuI61x6MzM0a2dsPNC_jgMmRvpdQldI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
