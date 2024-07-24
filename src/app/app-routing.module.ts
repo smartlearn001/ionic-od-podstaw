@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'plugins/crashlytics',
     loadChildren: () => import('./plugins/crashlytics/crashlytics.module').then( m => m.CrashlyticsPageModule)
   },
+  {
+    path: 'plugins/share',
+    loadChildren: () => import('./plugins/share/share.module').then( m => m.SharePageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GPS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button color="primary" (click)="shareText()" expand="block">Tekst</ion-button>
+  <ion-button color="primary" (click)="shareUrl()" expand="block">URL</ion-button>
+  <ion-button color="primary" (click)="sharePhoto()" expand="block">Zdjęcie</ion-button>
+  <ion-button color="primary" (click)="shareFiles()" expand="block">Pliki</ion-button>
+</ion-content>
