@@ -106,6 +106,10 @@ const routes: Routes = [
   {
     path: 'storage/local',
     loadChildren: () => import('./storage/local/local.module').then( m => m.LocalPageModule)
+  },
+  {
+    path: 'storage/firestore',
+    loadChildren: () => import('./storage/firestore/firestore.module').then( m => m.FirestorePageModule)
   }
 ];
 

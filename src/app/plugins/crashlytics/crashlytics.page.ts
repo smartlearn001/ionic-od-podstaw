@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseCrashlytics } from '@capacitor-community/firebase-crashlytics';
+import { FirebaseCrashlytics } from '@capacitor-firebase/crashlytics';
 import * as StackTrace from 'stacktrace-js';
 
 @Component({
@@ -12,7 +12,7 @@ export class CrashlyticsPage implements OnInit {
   constructor() { }
 
   async ngOnInit(): Promise<void> {
-    await FirebaseCrashlytics.setContext({ 
+    await FirebaseCrashlytics.setCustomKey({ 
       key: 'page',
       value: 'plugins/crashlytics',
       type: 'string'
@@ -24,7 +24,7 @@ export class CrashlyticsPage implements OnInit {
   }
 
   async logMessage(): Promise<void> {
-    await FirebaseCrashlytics.addLogMessage({
+    await FirebaseCrashlytics.log({
       message: 'Wiadomość testowa ' + new Date().getTime()
     });
   }
