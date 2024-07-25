@@ -110,6 +110,10 @@ const routes: Routes = [
   {
     path: 'storage/firestore',
     loadChildren: () => import('./storage/firestore/firestore.module').then( m => m.FirestorePageModule)
+  },
+  {
+    path: 'storage/sqlite',
+    loadChildren: () => import('./storage/sqlite/sqlite.module').then( m => m.SqlitePageModule)
   }
 ];
 

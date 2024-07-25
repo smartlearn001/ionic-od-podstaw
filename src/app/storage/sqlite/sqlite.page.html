@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>SQLite</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" (click)="add()">Dodaj rekord</ion-button>
+
+  <ion-list *ngIf="data">
+    <ion-item *ngFor="let item of data">
+      {{ item.name }}
+
+      <ion-button slot="end" color="danger" (click)="remove(item.id)">Usuń</ion-button>
+      <ion-button slot="end" color="secondary" (click)="update(item.id)">Aktualizuj</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

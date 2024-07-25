@@ -958,6 +958,10 @@ PODS:
     - Capacitor
   - CapacitorCamera (5.0.10):
     - Capacitor
+  - CapacitorCommunitySqlite (5.0.6):
+    - Capacitor
+    - SQLCipher
+    - ZIPFoundation
   - CapacitorCordova (5.2.2)
   - CapacitorFirebaseCrashlytics (5.4.0):
     - Capacitor
@@ -1134,11 +1138,18 @@ PODS:
   - PromisesObjC (2.4.0)
   - PromisesSwift (2.4.0):
     - PromisesObjC (= 2.4.0)
+  - SQLCipher (4.6.0):
+    - SQLCipher/standard (= 4.6.0)
+  - SQLCipher/common (4.6.0)
+  - SQLCipher/standard (4.6.0):
+    - SQLCipher/common
+  - ZIPFoundation (0.9.19)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorApp (from `../../node_modules/@capacitor/app`)"
   - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
+  - "CapacitorCommunitySqlite (from `../../node_modules/@capacitor-community/sqlite`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorFirebaseCrashlytics (from `../../node_modules/@capacitor-firebase/crashlytics`)"
   - "CapacitorFirebaseFirestore (from `../../node_modules/@capacitor-firebase/firestore`)"
@@ -1172,6 +1183,8 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - PromisesSwift
+    - SQLCipher
+    - ZIPFoundation
 
 EXTERNAL SOURCES:
   Capacitor:
@@ -1180,6 +1193,8 @@ EXTERNAL SOURCES:
     :path: "../../node_modules/@capacitor/app"
   CapacitorCamera:
     :path: "../../node_modules/@capacitor/camera"
+  CapacitorCommunitySqlite:
+    :path: "../../node_modules/@capacitor-community/sqlite"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorFirebaseCrashlytics:
@@ -1205,6 +1220,7 @@ SPEC CHECKSUMS:
   Capacitor: 070b18988e0f566728ae9a5eb3a7a974595f1626
   CapacitorApp: 024e1b1bea5f883d79f6330d309bc441c88ad04a
   CapacitorCamera: d333715364b5d85422c627aae6db87ef6161352c
+  CapacitorCommunitySqlite: 4abe6dcff394748ffdcd5b424e411b3f3a301754
   CapacitorCordova: 3773395d5331add072300ff6041ca2cf7b93cb0b
   CapacitorFirebaseCrashlytics: d0a9e0408cd3ef56c7f9eb56e23808a8e726e973
   CapacitorFirebaseFirestore: 8f4c8df27ddd759d9be0ee101930032c8a658fdf
@@ -1233,7 +1249,9 @@ SPEC CHECKSUMS:
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   PromisesSwift: 9d77319bbe72ebf6d872900551f7eeba9bce2851
+  SQLCipher: 30a8e81afa6128e600b17ffa77d0f92fa05ed208
+  ZIPFoundation: b8c29ea7ae353b309bc810586181fd073cb3312c
 
-PODFILE CHECKSUM: 2bd81596afdb6e86e1ddc04a6c8ce589d4941e15
+PODFILE CHECKSUM: 831ffe7744b5103c42380e48cfa93e951366e92e
 
 COCOAPODS: 1.12.1
