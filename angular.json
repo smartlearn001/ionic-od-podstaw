@@ -31,7 +31,10 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -105,13 +108,62 @@
               "src/**/*.html"
             ]
           }
+        },
+        "cypress-run": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "app:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "watch": true,
+            "headless": false
+          }
+        },
+        "e2e": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "app:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app:serve:production"
+            }
+          }
+        },
+        "ct": {
+          "builder": "@cypress/schematic:cypress",
+          "options": {
+            "devServerTarget": "app:serve",
+            "watch": true,
+            "headless": false,
+            "testingType": "component"
+          },
+          "configurations": {
+            "development": {
+              "devServerTarget": "app:serve:development"
+            }
+          }
         }
       }
     }
   },
   "cli": {
     "schematicCollections": [
-      "@ionic/angular-toolkit"
+      "@cypress/schematic",
+      "@cypress/schematic",
+      "@cypress/schematic",
+      "@ionic/angular-toolkit",
+      "@schematics/angular"
     ],
     "analytics": "0462246c-1256-4cbc-ac64-9c33d4e6ec26"
   },
